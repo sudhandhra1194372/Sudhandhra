@@ -1,0 +1,17 @@
+create table hospital(
+reference_id number  ,
+name varchar(30) not null,
+age number not null,
+gender varchar(10) check ((gender='male' or gender='female')) not null ,
+marital_status varchar(10) not null,
+phone_number number check ((phone_number>7000000000)or(phone_number<100000000000)) not null,
+disease_type varchar(30) not null,
+user_name varchar(20) ,
+password varchar(20)
+);
+create sequence h_name
+start with 100
+increment by 1
+select*from hospital
+drop table hospit
+
